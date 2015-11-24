@@ -22,7 +22,8 @@
     "watch": "^0.16.0"
   },
   "scripts": {
-    "start": "node main.js",
+    "start:pm2": "node main.js",
+    "start": "node web.js",
     "stop": "pm2 delete all",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "npm run build",
