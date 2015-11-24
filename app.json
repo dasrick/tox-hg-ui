@@ -1,0 +1,7 @@
+{
+  "name":"tox-hg-ui",
+  "description":"Template stuff of a mediathek for MovingIMAGE VideoManager of Hoffmann Group",
+  "scripts":{},
+  "env":{},
+  "addons":[]
+}

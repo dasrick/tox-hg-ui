@@ -1,0 +1,28 @@
+{
+  "name": "tox-hg-ui",
+  "version": "0.0.1",
+  "description": "Template stuff of a mediathek for MovingIMAGE VideoManager of Hoffmann Group",
+  "main": "web.js",
+  "author": "Enrico Hoffmann <dasrick@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dasrick/tox-hg-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dasrick/tox-hg-ui/issues"
+  },
+  "homepage": "https://github.com/dasrick/tox-hg-ui#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "pm2": "^0.15.10"
+  },
+  "devDependencies": {
+    "watch": "^0.16.0"
+  },
+  "scripts": {
+    "start": "pm2 start web.js --watch --name='web' -i 4",
+    "stop": "pm2 stop all",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
