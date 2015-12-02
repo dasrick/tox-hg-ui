@@ -1,6 +1,6 @@
 {
   "name": "tox-hg-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Template stuff of a mediathek for MovingIMAGE VideoManager of Hoffmann Group",
   "main": "web.js",
   "author": "Enrico Hoffmann <dasrick@gmail.com>",
