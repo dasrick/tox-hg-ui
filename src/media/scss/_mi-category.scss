@@ -17,9 +17,10 @@ $mi-categorey-color: #fff;
 
 .mi-category-item {
   position: relative;
-  display: block;
   color: $mi-categorey-color;
   margin-bottom: 10px;
+  padding: 0;
+  box-shadow: none;
 
   &:before {
     display: block;

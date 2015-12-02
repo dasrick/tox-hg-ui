@@ -2,10 +2,8 @@
 }
 
 .mi-related-item {
-  display: block;
-  background-color: #f9f9f9;
-  padding: $grid-gutter-width;
-  box-shadow: 0 1px 0 0 #e7e7e7;
+  //display: block;
+  //box-shadow: 0 1px 0 0 #e7e7e7;
 
   > a {
     //&:before {
@@ -21,18 +19,17 @@
     //}
     &:hover {
       //color: #333;
-      cursor: pointer;
+      //cursor: pointer;
       //&:before {
       //  opacity: .3;
       //}
     }
   }
 
-  > h5 {
-    font-weight: bold;
+  > .title {
     margin: 1em 0;
   }
-  > p {
-    margin-bottom: 0;
-  }
+  //> p {
+  //  margin-bottom: 0;
+  //}
 }
