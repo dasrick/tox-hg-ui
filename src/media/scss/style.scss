@@ -1,3 +1,7 @@
-body {
-  background-color: #cccccc;
-}
+@import "bootstrap-variables";
+@import "mi-view";
+@import "mi-nav";
+@import "mi-category";
+@import "mi-filter";
+@import "mi-related";
+@import "mi-list";
