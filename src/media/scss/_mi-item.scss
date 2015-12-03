@@ -3,24 +3,30 @@
   padding: $grid-gutter-width;
   display: block;
   box-shadow: 0 1px 0 0 #e7e7e7;
+  position: relative;
 
   a {
-
     &:hover {
       cursor: pointer;
     }
-  }
 
-  .preview {
-    a {
+    &.preview {
+      display: inline-block;
+      background: black;
+      padding: 0;
       img {
-
+        transition: all 0.1s linear;
+      }
+      &:hover img {
+        opacity: .2;
       }
     }
+
   }
 
   .title {
     font-weight: bold;
+    line-height: 1.2;
   }
 
   p {

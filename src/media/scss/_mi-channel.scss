@@ -1,0 +1,29 @@
+.mi-channel {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  li {
+    text-transform: uppercase;
+    &.active,
+    &.active > a {
+      color: #ff7001; // the hoffmann group orange
+    }
+  }
+  a {
+  }
+  > ul {
+    > li {
+      > a {
+      }
+      > ul {
+        padding-left: 1em;
+        > li {
+          > a {
+          }
+        }
+      }
+    }
+  }
+}

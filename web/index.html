@@ -169,7 +169,7 @@
             </div>
         </section>
         <section>
-            <div class="container">
+            <div class="container hidden">
                 <div class="row">
                     <div class="col-xs-12 col-md-12">
                         <p>Hier mal ein paar Hinweise zur Bedienung ... Unterhalb befinden sich drei Schaltflächen,
@@ -181,6 +181,10 @@
 
                         <p>Ansonsten bitte nichts im Kopf- oder Fußbereich anklicken, da diese Teile zum einen stark
                             beschnitten wurde und man im besten Fall direkt auf die Hoffmann Group seiten kommt ...</p>
+                        <h3>Anmerkungen</h3>
+                        <ul>
+                            <li><i class="icon-warning"></i> Das Element überhalb der Liste (filter) ... pain</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -207,26 +211,88 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-3">
                         <div class="mi-nav-group">
-                            nav
+
+                            <div class="mi-nav-item mi-nav-logo">
+                                <img class="image-responsive" src="img/HoG_TV_Logo_lang_RGB .png">
+                            </div>
+
+                            <div class="mi-nav-item mi-nav-search navbar-tools">
+
+                                <form class="form-search" name="search_form" method="get">
+                                    <input id="mi-search"
+                                           name="mi-search"
+                                           class="text ui-autocomplete-input"
+                                           type="search"
+                                           placeholder="Video Suche"
+                                           autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                    <button class="btn btn-search" type="submit">
+                                        <i class="icon-search"></i>
+                                    </button>
+                                </form>
+
+                            </div>
+
+                            <div class="mi-nav-item mi-channel">
+                                <ul>
+                                    <li><a>Produkte</a></li>
+                                    <li><a>Service</a></li>
+                                    <li><a>Unternehmen</a></li>
+                                    <li><a>DTM</a></li>
+                                    <li class="active"><a>Intern</a>
+                                        <ul>
+                                            <li><a>Schulungen</a></li>
+                                            <li><a>Events</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-9">
                         <div class="mi-filter">
-                            mi-filter
+                            <div class="row">
+                                <div class="col-md-6">
+                                    Produkte
+                                </div>
+                                <div class="col-md-6 text-right">
+
+                                    <nav class="navbar navbar-default">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li>Videos sortieren:</li>
+                                            <li class="dropdown">
+                                                <a href="#"
+                                                   class="dropdown-toggle"
+                                                   data-toggle="dropdown"
+                                                   role="button"
+                                                   aria-haspopup="true"
+                                                   aria-expanded="false">Dropdown</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Separated link</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+                            </div>
+
                         </div>
                         <div class="mi-list-group">
                             <div class="mi-item mi-list-item">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <div class="preview">
-                                            <a href="detail.html">
-                                                <img class="image-responsive" src="img/placeholder_16_9.png">
-                                            </a>
-                                        </div>
+                                        <a class="preview" href="detail.html">
+                                            <img class="image-responsive" src="img/placeholder_16_9.png">
+                                        </a>
                                     </div>
                                     <div class="col-md-9">
                                         <p class="info">Datum: 12.12.2012 | Views: 234</p>
-                                        <h4 class="title truncate">Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title </h4>
+                                        <h4 class="title truncate">VÄgypideo Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title </h4>
                                         <p class="more"><span><i class="icon-link-arrow-thin"></i></span><a>Zum Video</a></p>
                                     </div>
                                 </div>
@@ -234,11 +300,9 @@
                             <div class="mi-item mi-list-item">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <div class="preview">
-                                            <a href="detail.html">
-                                                <img class="image-responsive" src="img/placeholder_16_9.png">
-                                            </a>
-                                        </div>
+                                        <a class="preview" href="detail.html">
+                                            <img class="image-responsive" src="img/placeholder_16_9.png">
+                                        </a>
                                     </div>
                                     <div class="col-md-9">
                                         <p class="info">Datum: 12.12.2012 | Views: 234</p>
@@ -265,11 +329,9 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="mi-item mi-related-item">
-                                <div class="preview">
-                                    <a href="detail.html">
-                                        <img class="image-responsive" src="img/placeholder_16_9.png">
-                                    </a>
-                                </div>
+                                <a class="preview" href="detail.html">
+                                    <img class="image-responsive" src="img/placeholder_16_9.png">
+                                </a>
                                 <h4 class="title truncate">VÄgypideo Title Video Title Video Title Video Title Video
                                     Title Video Title Video</h4>
                                 <p class="info">Datum: 12.12.2012</p>
@@ -278,11 +340,9 @@
                         </div>
                         <div class="col-md-3">
                             <div class="mi-item mi-related-item">
-                                <div class="preview">
-                                    <a href="detail.html">
-                                        <img class="image-responsive" src="img/placeholder_16_9.png">
-                                    </a>
-                                </div>
+                                <a class="preview" href="detail.html">
+                                    <img class="image-responsive" src="img/placeholder_16_9.png">
+                                </a>
                                 <h4 class="title truncate">VÄgypideo Title Video Title Video Title Video Title Video
                                     Title Video Title Video</h4>
                                 <p class="info">Datum: 12.12.2012</p>
@@ -291,11 +351,9 @@
                         </div>
                         <div class="col-md-3">
                             <div class="mi-item mi-related-item">
-                                <div class="preview">
-                                    <a href="detail.html">
-                                        <img class="image-responsive" src="img/placeholder_16_9.png">
-                                    </a>
-                                </div>
+                                <a class="preview" href="detail.html">
+                                    <img class="image-responsive" src="img/placeholder_16_9.png">
+                                </a>
                                 <h4 class="title truncate">VÄgypideo Title Video Title Video Title Video Title Video
                                     Title Video Title Video</h4>
                                 <p class="info">Datum: 12.12.2012</p>
@@ -304,11 +362,9 @@
                         </div>
                         <div class="col-md-3">
                             <div class="mi-item mi-related-item">
-                                <div class="preview">
-                                    <a href="detail.html">
-                                        <img class="image-responsive" src="img/placeholder_16_9.png">
-                                    </a>
-                                </div>
+                                <a class="preview" href="detail.html">
+                                    <img class="image-responsive" src="img/placeholder_16_9.png">
+                                </a>
                                 <h4 class="title truncate">VÄgypideo Title Video Title Video Title Video Title Video
                                     Title Video Title Video</h4>
                                 <p class="info">Datum: 12.12.2012</p>
@@ -331,35 +387,40 @@
                 <div class="mi-category-group">
                     <div class="row">
                         <div class="col-md-6">
-                            <a href="detail.html" class="mi-item mi-category-item">
-                                <img class="image-responsive" src="img/placeholder_16_9.png">
-
+                            <div class="mi-item mi-category-item">
+                                <a href="detail.html" class="preview">
+                                    <img class="image-responsive" src="img/placeholder_16_9.png">
+                                </a>
                                 <p class="truncate">Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title </p>
-                            </a>
+                            </div>
                         </div>
                         <div class="col-md-3">
-                            <a href="detail.html" class="mi-item mi-category-item">
-                                <img class="image-responsive" src="img/placeholder_16_9.png">
-
-                                <p class="truncate">Video Title</p>
-                            </a>
-                            <a href="detail.html" class="mi-item mi-category-item">
-                                <img class="image-responsive" src="img/placeholder_16_9.png">
-
+                            <div class="mi-item mi-category-item">
+                                <a href="detail.html" class="preview">
+                                    <img class="image-responsive" src="img/placeholder_16_9.png">
+                                </a>
                                 <p class="truncate">Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title </p>
-                            </a>
+                            </div>
+                            <div class="mi-item mi-category-item">
+                                <a href="detail.html" class="preview">
+                                    <img class="image-responsive" src="img/placeholder_16_9.png">
+                                </a>
+                                <p class="truncate">Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title </p>
+                            </div>
                         </div>
                         <div class="col-md-3">
-                            <a href="detail.html" class="mi-item mi-category-item">
-                                <img class="image-responsive" src="img/placeholder_16_9.png">
-
-                                <p class="truncate">Video Title</p>
-                            </a>
-                            <a href="detail.html" class="mi-item mi-category-item">
-                                <img class="image-responsive" src="img/placeholder_16_9.png">
-
-                                <p class="truncate">Video Title</p>
-                            </a>
+                            <div class="mi-item mi-category-item">
+                                <a href="detail.html" class="preview">
+                                    <img class="image-responsive" src="img/placeholder_16_9.png">
+                                </a>
+                                <p class="truncate">Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title </p>
+                            </div>
+                            <div class="mi-item mi-category-item">
+                                <a href="detail.html" class="preview">
+                                    <img class="image-responsive" src="img/placeholder_16_9.png">
+                                </a>
+                                <p class="truncate">Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title Video Title </p>
+                            </div>
                         </div>
                     </div>
                     <p>

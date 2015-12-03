@@ -1,4 +1,7 @@
+$mi-filter-color: #fff;
 .mi-filter {
-  background-color: rgba(255,255,255, .25);
+  color: $mi-filter-color;
+  background-color: rgba($mi-filter-color, .25);
   padding: $grid-gutter-width / 2;
+  margin-bottom: $grid-gutter-width / 2;
 }

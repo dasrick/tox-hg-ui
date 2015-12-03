@@ -1,6 +1,29 @@
 .mi-nav-group {
-  //display: block;
   background-color: #fff;
-  padding: $grid-gutter-width / 2;
+  padding: $grid-gutter-width;
   box-shadow: 0 1px 0 0 #e7e7e7;
+}
+
+.mi-nav-item {
+  margin-bottom: 1em;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mi-nav-logo {
+}
+
+.mi-nav-search {
+  .form-search {
+    margin-right: 0;
+    padding: 1px;
+    .btn-search {
+      font-size: 18px; // default font-size of html/body
+    }
+  }
+  input[type='search'] {
+    height: 2em;
+    font-size: 1em;
+  }
 }

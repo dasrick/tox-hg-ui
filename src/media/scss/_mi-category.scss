@@ -1,4 +1,4 @@
-$mi-categorey-color: #fff;
+$mi-category-color: #fff;
 
 .mi-category-group {
   > p {
@@ -16,43 +16,20 @@ $mi-categorey-color: #fff;
 }
 
 .mi-category-item {
-  position: relative;
-  color: $mi-categorey-color;
+  color: $mi-category-color;
   margin-bottom: 10px;
   padding: 0;
   box-shadow: none;
 
-  &:before {
-    display: block;
-    content: " ";
-    position: absolute;
-    background: #000;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-  }
-
   &:hover {
     cursor: pointer;
-    color: darken($mi-categorey-color, 50%);
-    &:before {
-      opacity: .2;
-    }
+    color: darken($mi-category-color, 50%);
   }
-  > img {}
   > p {
     position: absolute;
-    overflow: hidden;
-
     bottom: $grid-gutter-width / 2;
     left: $grid-gutter-width / 2;
     right: $grid-gutter-width / 2;
-
     height: $line-height-base * 1em;
-
-    padding: 0;
-    margin: 0;
   }
 }

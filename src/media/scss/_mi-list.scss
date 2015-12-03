@@ -8,4 +8,10 @@
     font-weight: normal;
     vertical-align: middle;
   }
+
+  p {
+    &.more {
+      margin-top: 1.3em;  // unschön
+    }
+  }
 }
