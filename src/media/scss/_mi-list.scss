@@ -1,14 +1,26 @@
-.mi-list-group {}
+.mi-list-group {
+  .mi-link-item {
+    text-align: center;
+    font-size: large;
+    text-transform: uppercase;
+    display: block;
+    margin: 2em 0 0 ;
+    a {
+      color: $mi-grey;
+      &:hover {
+        color: $mi-back;
+      }
+    }
+  }
+}
 .mi-list-item {
   margin-bottom: $grid-gutter-width;
-
   .icon-link-arrow-thin {
     margin: 0 .5em 0 0;
     font-size: .7em;
     font-weight: normal;
     vertical-align: middle;
   }
-
   p {
     &.more {
       margin-top: 1.3em;  // unschön

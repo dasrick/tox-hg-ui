@@ -1,7 +1,6 @@
-$mi-filter-color: #fff;
 .mi-filter {
-  color: $mi-filter-color;
-  background-color: rgba($mi-filter-color, .25);
+  color: $mi-white;
+  background-color: rgba($mi-white, .25);
   padding: $grid-gutter-width / 2;
   margin-bottom: $grid-gutter-width / 2;
 }

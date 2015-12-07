@@ -3,7 +3,6 @@
     > a {
       color: $mi-grey;
     }
-    text-align: right;
     .icon-link-arrow-thin {
       margin: 0 .2em;
       font-size: .6em;
@@ -17,8 +16,7 @@
   color: $mi-white;
   margin-bottom: 6px;
   padding: 0;
-  box-shadow: none;
-
+  //box-shadow: none;
   &:hover {
     cursor: pointer;
     color: darken($mi-white, 50%);

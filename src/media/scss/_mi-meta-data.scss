@@ -1,21 +1,14 @@
 .mi-meta-data {
   background-color: $mi-item-bg;
   padding: $grid-gutter-width;
-
   ul {
-    margin: 0;
-    //  &:first-child {
-    //    float: left;
-    //  }
     &.list-social {
       margin: -4px 0;
     }
   }
-
   .title {
     margin-bottom: .5em;
   }
-
   p {
     margin-bottom: 1em;
     &:last-child {
@@ -24,8 +17,6 @@
     &.more {
       color: $mi-orange;
       span i {
-        transform: rotate(90deg);
-        display: inline-block;
         margin-right: .5em;
       }
       > a {
@@ -33,11 +24,9 @@
       }
     }
   }
-
   &:first-child {
     border-bottom: 1px solid $mi-grey-light;
     .info {
-      text-align: right;
       margin-bottom: 0;
       margin-top: 1em;
       span {
@@ -45,7 +34,6 @@
       }
     }
   }
-
   .mi-list-keywords {
     margin-bottom: 1em;
     li {
@@ -59,5 +47,4 @@
       }
     }
   }
-
 }
