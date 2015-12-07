@@ -10,6 +10,7 @@
       cursor: pointer;
     }
     &.preview {
+      position: relative;
       display: inline-block;
       background: $mi-back;
       padding: 0;
