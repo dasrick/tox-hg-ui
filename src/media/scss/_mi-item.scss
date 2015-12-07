@@ -2,26 +2,39 @@
   background-color: $mi-item-bg;
   padding: $grid-gutter-width;
   display: block;
-  box-shadow: 0 1px 0 0 #e7e7e7;
+  //box-shadow: 0 1px 0 0 $mi-grey-light;
   position: relative;
 
   a {
     &:hover {
       cursor: pointer;
     }
-
     &.preview {
       display: inline-block;
-      background: black;
+      background: $mi-back;
       padding: 0;
       img {
         transition: all 0.1s linear;
       }
-      &:hover img {
-        opacity: .2;
+      .icon-playback {
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: transparent url('http://app.studiolivetv.com/channels/mys/images/play.png') no-repeat 50% 50%;
+        background-size: auto 40%;
+      }
+      &:hover {
+        img {
+          opacity: .2;
+        }
+        .icon-playback {
+          display: block;
+        }
       }
     }
-
   }
 
   .title {
@@ -33,11 +46,11 @@
     padding: 0;
     margin: 0;
     &.info {
-      color: #b3b3b3
+      color: $mi-grey;
     }
     &.more,
     > a {
-      color: #000;
+      color: $mi-back;
     }
   }
 }

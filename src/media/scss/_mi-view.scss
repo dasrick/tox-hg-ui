@@ -16,6 +16,7 @@ $teaser-bg-img: 'data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/s
         height: $teaser-height;
         + section {
           margin-top: $teaser-height * -1 + $teaser-content-height;
+          margin-bottom: 0;
         }
       }
       .nav-content-breadcrumb {

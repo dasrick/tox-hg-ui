@@ -153,7 +153,7 @@
 
 
     <article>
-        <section class="content-page">
+        <section>
             <div class="container">
                 <div class="row">
                     <header class="header-masthead header-under-content-breadcrumb">
@@ -168,7 +168,7 @@
                 </div>
             </div>
         </section>
-        <section class="content-page">
+        <section>
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-3">
@@ -209,80 +209,73 @@
                         <!-- END: nav -->
                     </div>
                     <div class="col-xs-12 col-md-9">
-                        Video Embed Code
+                        <!-- START embed video -->
+                        <div mi24-video-player
+                             video-id="9-B_1ieMDSRaatvbjBs6SH"
+                             player-id="6BQ-ccQuNTUQAStvUVLnkE"
+                             config-type="vmpro"
+                             flash-path="//e.video-cdn.net/v2/"
+                             api-url="//d.video-cdn.net/play"></div>
+                        <script src="//e.video-cdn.net/v2/embed.js"></script>
+                        <!-- END embed video -->
                     </div>
                 </div>
             </div>
         </section>
-        <section class="content-page">
+
+        <!-- START orderbox + video-metadata -->
+        <section>
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-3">
-                        <div class="mi-meta-data">Orderbox</div>
+                        Orderbox
                     </div>
                     <div class="col-xs-12 col-md-9">
-                        <div class="mi-meta-data mi-meta-top">
-                            <ul class="list-inline list-social">
-                                <li>
-                                    <a onclick="
-                                window.open(
-                                    'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
-                                    'facebooksharedialog',
-                                    'width=626,height=436');
-                                return false;">
-                                        <i class="icon-social_facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/share" onclick="
-                                var title = '{{ app.request.host }}: {{ video.name }}';
-                                var host  = location.href;
-                                var len = title.length;
-                                var maxLength = 119;
-                                var separator = '[...]'
-                                if ( len > maxLength ) {
-                                    var cut = len-maxLength+separator.length;
-                                    title = title.substr(0,len-cut-1)+separator;
-                                }
-                                window.open(
-                                    this.href+'?url='+encodeURIComponent(host)+'&text='+encodeURIComponent(title),
-                                    'twitter',
-                                    'width=626,height=436');
-                                return false;">
-                                        <i class="icon-social_twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://plus.google.com/share?url={{ app.request.uri }}" onclick="
-                                window.open(
-                                    this.href,
-                                    '',
-                                    'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
-                                return false;">
-                                        <i class="icon-social_youtube"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="list-inline text-right">
-                                <li>Datum: 12.12.2012</li>
-                                <li>Views: 123.123</li>
-                            </ul>
+                        <div class="mi-item mi-meta-data">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <ul class="list-inline list-social">
+                                        <li>
+                                            <a href="https://facebook.com/share">
+                                                <i class="icon-social_facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/share">
+                                                <i class="icon-social_twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://plus.google.com/share">
+                                                <i class="icon-social_youtube"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <p class="info"><span>Datum: 12.12.2012</span> <span>Views: 234</span></p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mi-meta-data">
+                        <div class="mi-item mi-meta-data">
 
-                            <h3>VÄgypideo Title Video VÄgypideo Title Video -- VÄgypideo Title Video</h3>
+                            <h3 class="title">VÄgypideo Title Video VÄgypideo Title Video -- VÄgypideo Title Video</h3>
+
                             <p>
                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                                 invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
                                 accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
                                 sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
                                 sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                aliquyam erat, sed diam voluptua.
+                            </p>
+
+                            <p>At vero eos et accusam et justo duo dolores et ea
                                 rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
                                 amet.
                             </p>
                             <ul class="list-inline mi-list-keywords">
-                                <li>Schlagwoerter:</li>
+                                <li>Schlagwörter:</li>
                                 <li><a href="#">Keyword</a></li>
                                 <li><a href="#">Keyword</a></li>
                                 <li><a href="#">Keyword</a></li>
@@ -290,16 +283,16 @@
                                 <li><a href="#">Keyword</a></li>
                                 <li><a href="#">Keyword</a></li>
                             </ul>
-                            <p>
-                                <a class="mi-expand" href="#">Mehr Information Aufklappen</a>
-                            </p>
+                            <p class="more"><span><i class="icon-link-arrow-thin"></i></span><a>Mehr Information Aufklappen</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- START orderbox + video-metadata -->
+
         <!-- START: related -->
-        <section class="content-page">
+        <section>
             <div class="container">
                 <header class="header-sectionhead">
                     <h2>Related Videos</h2>
@@ -310,10 +303,13 @@
                             <div class="mi-item mi-related-item">
                                 <a class="preview" href="detail.html">
                                     <img class="image-responsive" src="img/placeholder_16_9.png">
+                                    <div class="icon-playback"></div>
                                 </a>
                                 <h4 class="title truncate">VÄgypideo Title Video Title Video Title Video Title Video
                                     Title Video Title Video</h4>
+
                                 <p class="info">Datum: 12.12.2012</p>
+
                                 <p class="info">Views: 234</p>
                             </div>
                         </div>
@@ -321,10 +317,13 @@
                             <div class="mi-item mi-related-item">
                                 <a class="preview" href="detail.html">
                                     <img class="image-responsive" src="img/placeholder_16_9.png">
+                                    <div class="icon-playback"></div>
                                 </a>
                                 <h4 class="title truncate">VÄgypideo Title Video Title Video Title Video Title Video
                                     Title Video Title Video</h4>
+
                                 <p class="info">Datum: 12.12.2012</p>
+
                                 <p class="info">Views: 234</p>
                             </div>
                         </div>
@@ -332,10 +331,13 @@
                             <div class="mi-item mi-related-item">
                                 <a class="preview" href="detail.html">
                                     <img class="image-responsive" src="img/placeholder_16_9.png">
+                                    <div class="icon-playback"></div>
                                 </a>
                                 <h4 class="title truncate">VÄgypideo Title Video Title Video Title Video Title Video
                                     Title Video Title Video</h4>
+
                                 <p class="info">Datum: 12.12.2012</p>
+
                                 <p class="info">Views: 234</p>
                             </div>
                         </div>
@@ -343,10 +345,13 @@
                             <div class="mi-item mi-related-item">
                                 <a class="preview" href="detail.html">
                                     <img class="image-responsive" src="img/placeholder_16_9.png">
+                                    <div class="icon-playback"></div>
                                 </a>
                                 <h4 class="title truncate">VÄgypideo Title Video Title Video Title Video Title Video
                                     Title Video Title Video</h4>
+
                                 <p class="info">Datum: 12.12.2012</p>
+
                                 <p class="info">Views: 234</p>
                             </div>
                         </div>

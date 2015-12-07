@@ -8,7 +8,7 @@
     text-transform: uppercase;
     &.active,
     &.active > a {
-      color: #ff7001; // the hoffmann group orange
+      color: $mi-orange;
     }
   }
   a {

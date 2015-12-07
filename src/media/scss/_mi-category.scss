@@ -1,9 +1,7 @@
-$mi-category-color: #fff;
-
 .mi-category-group {
   > p {
     > a {
-      color: #b3b3b3;
+      color: $mi-grey;
     }
     text-align: right;
     .icon-link-arrow-thin {
@@ -16,14 +14,14 @@ $mi-category-color: #fff;
 }
 
 .mi-category-item {
-  color: $mi-category-color;
-  margin-bottom: 10px;
+  color: $mi-white;
+  margin-bottom: 6px;
   padding: 0;
   box-shadow: none;
 
   &:hover {
     cursor: pointer;
-    color: darken($mi-category-color, 50%);
+    color: darken($mi-white, 50%);
   }
   > p {
     position: absolute;
