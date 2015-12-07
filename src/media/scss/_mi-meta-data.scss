@@ -1,0 +1,42 @@
+.mi-meta-data {
+  background-color: $mi-item-bg;
+  border: solid 1px #b3b3b3;
+  border-top: none;
+  padding: 1.3em;
+  &:first-child {
+    border-top: solid 1px #b3b3b3;
+
+  }
+  ul {
+    margin: 0;
+    &:first-child {
+      float: left;
+    }
+  }
+  &.mi-meta-top li {
+    line-height: 2.6em;
+    color: #b3b3b3;
+  }
+  h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  .mi-list-keywords {
+    margin-bottom: 1em;
+    li {
+      padding-left: 0;
+      margin-bottom: 1em;
+      &:first-child {
+        font-weight: bold;
+      }
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+  a.mi-expand:before {
+    font-family: "fontcustom";
+    content: "\f126\00a0";
+  }
+}

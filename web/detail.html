@@ -184,7 +184,8 @@
                                            class="text ui-autocomplete-input"
                                            type="search"
                                            placeholder="Video Suche"
-                                           autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                           autocomplete="off"><span role="status" aria-live="polite"
+                                                                    class="ui-helper-hidden-accessible"></span>
                                     <button class="btn btn-search" type="submit">
                                         <i class="icon-search"></i>
                                     </button>
@@ -208,7 +209,91 @@
                         <!-- END: nav -->
                     </div>
                     <div class="col-xs-12 col-md-9">
-                        detail-video-item
+                        Video Embed Code
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="mi-meta-data">Orderbox</div>
+                    </div>
+                    <div class="col-xs-12 col-md-9">
+                        <div class="mi-meta-data mi-meta-top">
+                            <ul class="list-inline list-social">
+                                <li>
+                                    <a onclick="
+                                window.open(
+                                    'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+                                    'facebooksharedialog',
+                                    'width=626,height=436');
+                                return false;">
+                                        <i class="icon-social_facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/share" onclick="
+                                var title = '{{ app.request.host }}: {{ video.name }}';
+                                var host  = location.href;
+                                var len = title.length;
+                                var maxLength = 119;
+                                var separator = '[...]'
+                                if ( len > maxLength ) {
+                                    var cut = len-maxLength+separator.length;
+                                    title = title.substr(0,len-cut-1)+separator;
+                                }
+                                window.open(
+                                    this.href+'?url='+encodeURIComponent(host)+'&text='+encodeURIComponent(title),
+                                    'twitter',
+                                    'width=626,height=436');
+                                return false;">
+                                        <i class="icon-social_twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://plus.google.com/share?url={{ app.request.uri }}" onclick="
+                                window.open(
+                                    this.href,
+                                    '',
+                                    'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
+                                return false;">
+                                        <i class="icon-social_youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="list-inline text-right">
+                                <li>Datum: 12.12.2012</li>
+                                <li>Views: 123.123</li>
+                            </ul>
+                        </div>
+                        <div class="mi-meta-data">
+
+                            <h3>VÄgypideo Title Video VÄgypideo Title Video -- VÄgypideo Title Video</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                amet.
+                            </p>
+                            <ul class="list-inline mi-list-keywords">
+                                <li>Schlagwoerter:</li>
+                                <li><a href="#">Keyword</a></li>
+                                <li><a href="#">Keyword</a></li>
+                                <li><a href="#">Keyword</a></li>
+                                <li><a href="#">Keyword</a></li>
+                                <li><a href="#">Keyword</a></li>
+                                <li><a href="#">Keyword</a></li>
+                            </ul>
+                            <p>
+                                <a class="mi-expand" href="#">Mehr Information Aufklappen</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
