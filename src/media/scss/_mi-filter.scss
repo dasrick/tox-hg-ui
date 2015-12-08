@@ -3,4 +3,22 @@
   background-color: rgba($mi-white, .25);
   padding: $grid-gutter-width / 2;
   margin-bottom: $grid-gutter-width / 2;
+
+  .title {
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .main-nav .dropdown > a {
+    color: $mi-white;
+    background-color: transparent;
+    &:hover {
+      cursor: pointer;
+      color: $mi-white;
+    }
+    > span {
+      font-size: .7em;
+      margin-left: .25em;
+    }
+  }
 }
