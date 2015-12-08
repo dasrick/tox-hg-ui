@@ -12,6 +12,9 @@
         + section {
           margin-top: $mi-teaser-height * -1 + $mi-teaser-content-height;
           margin-bottom: 0;
+          &.entry-page {
+            margin-bottom: 100px;
+          }
         }
       }
       ul {
