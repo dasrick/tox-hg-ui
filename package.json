@@ -14,9 +14,11 @@
   },
   "homepage": "https://github.com/dasrick/tox-hg-ui#readme",
   "dependencies": {
+    "autoprefixer": "^6.1.2",
     "express": "^4.13.3",
     "node-sass": "^3.4.2",
-    "pm2": "^0.15.10"
+    "pm2": "^0.15.10",
+    "postcss-cli": "^2.3.2"
   },
   "devDependencies": {
     "watch": "^0.16.0"
@@ -29,7 +31,7 @@
     "postinstall": "npm run build",
     "build": "npm run build:css && npm run build:img",
     "build:img": "mkdir -p web/img && cp src/media/img/* web/img",
-    "build:css": "node-sass --output-style=compressed src/media/scss/style.scss web/css/style.css",
+    "build:css": "node-sass src/media/scss/style.scss web/css/style.raw.css && postcss --use autoprefixer --autoprefixer.browsers 'last 5 versions' -o web/css/style.css web/css/style.raw.css",
     "watch": "watch 'npm run build:css' src/media/scss"
   }
 }
