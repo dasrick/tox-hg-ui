@@ -2,8 +2,20 @@
   background-color: $mi-item-bg;
   padding: $grid-gutter-width;
   ul {
-    &.list-social {
-      margin: -4px 0;
+    &.list-social > li > a {
+      display: block;
+      width: 43px;
+      height: 43px;
+      background: transparent url("../img/grafik-socialmedia-icon_sprite.png") no-repeat;
+      &.socialmedia_facebook {
+        background-position: 0 0;
+      }
+      &.socialmedia_twitter {
+        background-position: -53px 0;
+      }
+      &.socialmedia_googleplus {
+        background-position: -104px 0;
+      }
     }
   }
   .title {
