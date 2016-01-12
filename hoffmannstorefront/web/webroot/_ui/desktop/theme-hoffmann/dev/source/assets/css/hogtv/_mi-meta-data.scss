@@ -1,0 +1,50 @@
+.mi-meta-data {
+  background-color: $mi-item-bg;
+  padding: $grid-gutter-width;
+  ul {
+    &.list-social {
+      margin: -4px 0;
+    }
+  }
+  .title {
+    margin-bottom: .5em;
+  }
+  p {
+    margin-bottom: 1em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &.more {
+      color: $mi-orange;
+      span i {
+        margin-right: .5em;
+      }
+      > a {
+        color: $mi-orange;
+      }
+    }
+  }
+  &:first-child {
+    border-bottom: 1px solid $mi-grey-light;
+    .info {
+      margin-bottom: 0;
+      margin-top: 1em;
+      span {
+        padding-left: .5em;
+      }
+    }
+  }
+  .mi-list-keywords {
+    margin-bottom: 1em;
+    li {
+      padding-left: 0;
+      margin-bottom: 1em;
+      &:first-child {
+        font-weight: bold;
+      }
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}

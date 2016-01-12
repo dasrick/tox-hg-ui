@@ -1,0 +1,63 @@
+.mi-item {
+  background-color: $mi-item-bg;
+  padding: $grid-gutter-width;
+  display: block;
+  position: relative;
+  a {
+    > .preview {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      background: $mi-back;
+      padding: 0;
+      overflow: hidden;
+      &:after {
+        padding-top: 56.25%;
+        /* 16:9 ratio */
+        display: block;
+        content: '';
+      }
+      img {
+        transition: all 0.1s linear;
+        width: 100%;
+        position: absolute;
+      }
+      .icon-playback {
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: transparent url($mi-item-hover-img) no-repeat 50% 50%;
+        background-size: auto 40%;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      > .preview {
+        img {
+          opacity: .2;
+        }
+        .icon-playback {
+          display: block;
+        }
+      }
+    }
+  }
+  .title {
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+    &.info {
+      color: $mi-grey;
+    }
+    &.more,
+    > a {
+      color: $mi-back;
+    }
+  }
+}

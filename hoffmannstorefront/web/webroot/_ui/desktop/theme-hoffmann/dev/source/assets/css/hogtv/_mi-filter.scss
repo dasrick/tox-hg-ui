@@ -1,0 +1,51 @@
+.mi-filter {
+  color: $mi-white;
+  background-color: rgba($mi-white, .25);
+  padding: $grid-gutter-width / 2;
+  margin-bottom: $grid-gutter-width / 2;
+
+  .title {
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .main-nav .dropdown > a {
+    color: $mi-white;
+    background-color: transparent;
+    &:hover {
+      cursor: pointer;
+      color: $mi-white;
+    }
+    > span {
+      font-size: .7em;
+      margin-left: .25em;
+    }
+  }
+  .main-nav .dropdown div div {
+    color: #333;
+  }
+  .sort {
+  		border-left: 6px solid transparent;
+  		border-right: 6px solid transparent;
+  		display: inline-block;
+  		position: relative;
+  }
+  
+  .sortASC {
+  		border-bottom: 6px solid #FF7001;
+  		
+  		&:hover {
+  			border-bottom-color: #333;
+  		}
+  }
+  .sortDESC {
+  		border-top: 6px solid #FF7001;
+  		&:hover {
+  			border-top-color: #333;
+  		}
+  }
+  .sortActive {
+  		border-top-color: #333;
+  		border-bottom-color: #333;
+  }
+}

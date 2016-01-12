@@ -1,0 +1,51 @@
+.mi-view {
+  > main {
+    > .navbar,
+    > article section:first-child {
+      margin-bottom: 0;
+    }
+    > article {
+      > section:first-child {
+        background: $mi-teaser-bg url($mi-teaser-bg-img) no-repeat top center;
+        background-size: auto $mi-teaser-height;
+        height: $mi-teaser-height;
+        + section {
+          margin-top: $mi-teaser-height * -1 + $mi-teaser-content-height;
+          margin-bottom: 0;
+          &.entry-page {
+            margin-bottom: 100px;
+          }
+        }
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      .nav-content-breadcrumb {
+        margin: 0;
+        strong,
+        span i,
+        em span i,
+        a {
+          color: $mi-white;
+        }
+      }
+      .truncate {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .icon-rotate-90,
+      .icon-rotate-270 {
+        display: inline-block;
+      }
+      .icon-rotate-90 {
+        transform: rotate(90deg);
+      }
+      .icon-rotate-270 {
+        transform: rotate(270deg);
+      }
+    }
+  }
+}

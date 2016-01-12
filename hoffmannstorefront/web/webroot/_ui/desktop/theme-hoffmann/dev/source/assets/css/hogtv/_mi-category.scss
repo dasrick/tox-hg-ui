@@ -1,0 +1,30 @@
+.mi-category-group {
+  > p {
+    > a {
+      color: $mi-grey;
+    }
+    .icon-link-arrow-thin {
+      margin: 0 .2em;
+      font-size: .6em;
+      font-weight: normal;
+      vertical-align: middle;
+    }
+  }
+}
+
+.mi-category-item {
+  color: $mi-white;
+  margin-bottom: 4px;
+  padding: 0;
+  &:hover {
+    cursor: pointer;
+    color: darken($mi-white, 50%);
+  }
+  > p {
+    position: absolute;
+    bottom: $grid-gutter-width / 2;
+    left: $grid-gutter-width / 2;
+    right: $grid-gutter-width / 2;
+    height: $line-height-base * 1em;
+  }
+}

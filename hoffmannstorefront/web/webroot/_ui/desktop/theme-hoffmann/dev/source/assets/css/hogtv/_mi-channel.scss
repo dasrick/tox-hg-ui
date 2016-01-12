@@ -1,0 +1,27 @@
+.mi-channel {
+  ul {
+
+  }
+  li {
+    text-transform: uppercase;
+    &.active,
+    &.active > a {
+      color: $mi-orange;
+    }
+  }
+  a {
+  }
+  > ul {
+    > li {
+      > a {
+      }
+      > ul {
+        padding-left: 1em;
+        > li {
+          > a {
+          }
+        }
+      }
+    }
+  }
+}
