@@ -4,17 +4,23 @@
   display: block;
   position: relative;
   a {
-    &:hover {
-      cursor: pointer;
-    }
-    &.preview {
+    > .preview {
       position: relative;
       display: inline-block;
+      width: 100%;
       background: $mi-back;
       padding: 0;
+      overflow: hidden;
+      &:after {
+        padding-top: 56.25%;
+        /* 16:9 ratio */
+        display: block;
+        content: '';
+      }
       img {
         transition: all 0.1s linear;
         width: 100%;
+        position: absolute;
       }
       .icon-playback {
         display: none;
@@ -26,7 +32,10 @@
         background: transparent url($mi-item-hover-img) no-repeat 50% 50%;
         background-size: auto 40%;
       }
-      &:hover {
+    }
+    &:hover {
+      cursor: pointer;
+      > .preview {
         img {
           opacity: .2;
         }
