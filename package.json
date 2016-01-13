@@ -32,7 +32,7 @@
     "build": "npm run build:css && npm run build:css-hg && npm run build:img && npm run build:img-hg",
     "build:img": "mkdir -p web/img && cp src/media/img/* web/img",
     "build:img-hg": "mkdir -p hoffmannstorefront/web/webroot/_ui/desktop/theme-hoffmann/images/hogtv && cp src/media/img/* hoffmannstorefront/web/webroot/_ui/desktop/theme-hoffmann/images/hogtv",
-    "build:css": "node-sass src/media/scss/style.scss web/css/style.raw.css && postcss --use autoprefixer --autoprefixer.browsers 'last 5 versions' -o web/css/style.css web/css/style.raw.css",
+    "build:css": "node-sass src/media/scss/style.scss web/css/style.raw.css && postcss --use autoprefixer --autoprefixer.browsers 'last 2 versions','IE 9' -o web/css/style.css web/css/style.raw.css",
     "build:css-hg": "mkdir -p hoffmannstorefront/web/webroot/_ui/desktop/theme-hoffmann/dev/source/assets/css/hogtv && cp src/media/scss/_* hoffmannstorefront/web/webroot/_ui/desktop/theme-hoffmann/dev/source/assets/css/hogtv",
     "watch": "watch 'npm run build:css' src/media/scss"
   }
