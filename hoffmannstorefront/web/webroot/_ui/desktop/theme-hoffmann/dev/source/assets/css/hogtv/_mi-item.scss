@@ -59,5 +59,8 @@
     > a {
       color: $mi-back;
     }
+    &.more span i {
+      margin-left: .5em;
+    }
   }
 }
